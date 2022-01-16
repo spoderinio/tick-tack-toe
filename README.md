@@ -1,2 +1,2 @@
 # tick-tack-toe
-Tick tack toe played in the consol for 2 players
+Tick tack toe played in the console for 2 players
