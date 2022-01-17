@@ -88,6 +88,9 @@ def player2():
     global a1, a2, a3, b1, b2, b3, c1, c2, c3, continue_playing
     if continue_playing == False:
         return continue_playing
+    if a1 != " " and a2 != " " and a3 != " " and b1 != " " and b2 != " " and b3 != " " and c1 != " " and c2 != " " and c3 != " ":
+        continue_playing = False
+        return continue_playing
     us2_inp = input("Player2(O): Please make your move: ").lower()
     if us2_inp != "a1" and us2_inp != "a2" and us2_inp != "a3" and us2_inp != "b1" and us2_inp != "b2" and us2_inp != "b3" and us2_inp != "c1" and us2_inp != "c2" and us2_inp != "c3":
         print("Sorry that was an invalid input, please try again")
@@ -159,6 +162,9 @@ def player2():
 
 def check_p1():
     global continue_playing
+    if a1 != " " and a2 != " " and a3 != " " and b1 != " " and b2 != " " and b3 != " " and c1 != " " and c2 != " " and c3 != " ":
+        continue_playing = False
+        return continue_playing
     if a1 == "X" and a2 == "X" and a3 == "X":
         print("Player 1 wins")
         continue_playing = False
